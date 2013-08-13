@@ -1,3 +1,8 @@
+<% if user_signed_in? %>
+
+ You're logged in!
+<% else %>
+
 <div class="hero-unit">
 
 
@@ -5,12 +10,13 @@
 <h1>Welcome to My Rails test</h1>
 <p>
 	Sea Shells by the sea shore. <br><br>
-	<%= link_to "Google", "http://google.com", class:"btn btn-primary btn-large" %>
+	<%= link_to "Sign Up Now", new_user_registration_path, class:"btn btn-primary btn-large" %>
 
 </p>
 
 </div>
 
+<% end %>
 
 
 
